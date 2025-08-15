@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <div class="login-container">
+    <div class="text-center mb-3">
+      <div class="login-logo"><i class="fa-solid fa-piggy-bank"></i></div>
+      <h4 class="login-title mb-1">Masuk ke TabunganKu</h4>
+      <div class="login-subtitle">Pantau tabungan harianmu via WhatsApp</div>
+    </div>
+
+    <% if (flash && flash.length) { %>
+      <script>toastr.error('<%= flash %>');</script>
+    <% } %>
+
+    <form method="post" action="/login" class="mt-2">
+      <div class="form-group mb-3">
+        <input name="username" class="form-control" placeholder="Username" required />
+      </div>
+      <div class="form-group mb-3">
+        <input type="password" name="password" class="form-control" placeholder="Password" required />
+      </div>
+      <button class="btn btn-gradient w-100">
+        <i class="fa-solid fa-unlock-keyhole me-2"></i>Masuk
+      </button>
+    </form>
+
+    </div>
+</div>

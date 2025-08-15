@@ -1,0 +1,218 @@
+/* ===== Global Dark Theme ===== */
+body {
+  background: #0f172a; /* Navy dark */
+  color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0ea5e9;
+}
+
+/* ===== Navbar ===== */
+.nav-dark {
+  background: #1e293b;
+  transition: background 0.3s ease;
+}
+.navbar-brand {
+  color: #f8fafc !important;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #38bdf8 !important;
+}
+
+/* ===== Footer ===== */
+footer {
+  color: #cbd5e1;
+  background: #1e293b;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 10px;
+}
+footer i {
+  color: #ef4444;
+}
+
+/* ===== Buttons ===== */
+.btn-gradient {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: #fff;
+  border: none;
+  transition: all 0.25s ease;
+}
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(14,165,233,0.4);
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #1e293b;
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  transition: transform 0.2s ease, border-color 0.3s ease, background 0.3s ease;
+}
+.card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
+.card .text-muted {
+  color: #94a3b8 !important;
+}
+
+/* ===== Stat Card ===== */
+.stat-card {
+  background: #1f2a3a;
+}
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+.stat-card:hover .stat-icon {
+  transform: rotate(5deg) scale(1.05);
+}
+.bg-ok {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+/* ===== Inputs ===== */
+.form-control,
+.input-soft {
+  background: #0f172a;
+  color: #fff;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-control:focus,
+.input-soft:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+/* ===== Badges ===== */
+.badge {
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.text-bg-success {
+  background: #22c55e !important;
+  color: #fff !important;
+}
+.text-bg-danger {
+  background: #ef4444 !important;
+  color: #fff !important;
+}
+
+/* ===== Calendar ===== */
+.day-card {
+  background: #121a2a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 8px;
+  color: #e2e8f0;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.1s;
+}
+.day-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
+.today-outline-ok {
+  border-color: #22c55e !important;
+}
+.today-outline-x {
+  border-color: #ef4444 !important;
+}
+
+/* ===== Login Page ===== */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  padding: 20px;
+}
+.login-container {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+.login-container:hover {
+  transform: translateY(-3px);
+}
+.login-logo {
+  font-size: 50px;
+  color: #38bdf8;
+}
+.login-title {
+  color: #f8fafc;
+  font-weight: 600;
+}
+.login-subtitle {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* ===== Special Info Text ===== */
+.info-checkin {
+  background: rgba(14,165,233,0.1);
+  border: 1px solid #0ea5e9;
+  color: #38bdf8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.auto-checkin {
+  color: rgba(255, 255, 255, 0.9); /* putih terang */
+}
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+main, .wrapper, footer {
+  animation: fadeInUp 0.4s ease;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 576px) {
+  .stat-card h2 {
+    font-size: 1.4rem;
+  }
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .login-container {
+    padding: 20px;
+  }
+}
